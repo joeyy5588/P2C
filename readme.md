@@ -1,4 +1,7 @@
-# Codes for *Paraphrasing Is All You Need  for Novel Object Captioning*
+# Paraphrasing Is All You Need  for Novel Object Captioning
+
+This repository contains the official PyTorch implementation for the paper.
+> Yang, C. F., Tsai, Y. H. H., Fan, W. C., Salakhutdinov, R. R., Morency, L. P., & Wang, F. (2022). Paraphrasing Is All You Need for Novel Object Captioning. Advances in Neural Information Processing Systems, 35, 6492-6504.
 
 ### Installation
 - Follow the instruction from here: [link](https://github.com/microsoft/Oscar/blob/master/INSTALL.md) to set up the environment of our codebase, and replace the directory oscar/ with p2c/
