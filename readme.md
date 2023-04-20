@@ -1,6 +1,6 @@
 # Paraphrasing Is All You Need  for Novel Object Captioning
 
-This repository contains the official PyTorch implementation for the paper.
+This repository contains the official PyTorch implementation for the paper. [paper link](https://arxiv.org/abs/2209.12343)
 > Yang, C. F., Tsai, Y. H. H., Fan, W. C., Salakhutdinov, R. R., Morency, L. P., & Wang, F. (2022). Paraphrasing Is All You Need for Novel Object Captioning. Advances in Neural Information Processing Systems, 35, 6492-6504.
 
 ### Installation
