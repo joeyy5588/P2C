@@ -1,0 +1,5 @@
+img: train.img.tsv
+hw: train.hw.tsv
+label: train.label.tsv
+feature: train.feature.tsv
+caption: train_caption.json

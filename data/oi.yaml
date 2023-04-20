@@ -1,0 +1,6 @@
+corpus: oi
+corpus_file: oi.tsv
+image_label_path:
+  oi: YOUR_PATH_TO_DETECTION_TAGS_DIR
+image_feature_path:
+  oi: model_0060000

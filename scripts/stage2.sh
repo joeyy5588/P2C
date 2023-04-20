@@ -1,0 +1,22 @@
+python -m torch.distributed.launch --nproc_per_node=8 stage2.py \
+    --model_name_or_path YOUR_PATH_FROM_STAGE1 \
+    --data_dir PATH_TO_NOCAPS_DIR \
+    --coco_dir PATH_TO_COCO_DIR \
+    --train_yaml oi.yaml \
+    --coco_yaml train.yaml \
+    --do_train \
+    --do_lower_case \
+    --add_od_labels \
+    --scheduler constant \
+    --learning_rate 2.5e-6 \
+    --per_gpu_train_batch_size 16 \
+    --num_train_epochs 4 \
+    --tie_weights \
+    --freeze_embedding \
+    --scst \
+    --use_oi \
+    --mi_lambda 1.0 \
+    --ot_lambda 0.0 \
+    --rep_lambda 1.0 \
+    --output_dir output/stage2
+

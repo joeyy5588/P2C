@@ -1,0 +1,14 @@
+python -m torch.distributed.launch --nproc_per_node=4 run_captioning.py \
+    --model_name_or_path YOUR_CHECKPOINT_FROM_VIVO \
+    --data_dir PATH_TO_COCO_DIR \
+    --do_lower_case \
+    --do_train \
+    --add_od_labels \
+    --learning_rate 5e-05 \
+    --per_gpu_train_batch_size 64 \
+    --num_train_epochs 30 \
+    --tie_weights \
+    --freeze_embedding \
+    --output_dir output/xe/ \
+    --logging_steps 1000 \
+    --save_steps 5000 \

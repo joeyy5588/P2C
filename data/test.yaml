@@ -1,0 +1,6 @@
+cbs_box: PATH_TO_CBS_BOX
+cbs_constraint: constraint_to_tokens.tsv
+cbs_hierarchy: class_hierarchy.json
+cbs_tokenforms: constraint_tokenforms.tsv
+feature: PATH_TO_TEST_FEATURE
+label: PATH_TO_TEST_LABEL

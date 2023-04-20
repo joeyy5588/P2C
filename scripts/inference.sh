@@ -1,0 +1,16 @@
+python -m torch.distributed.launch --nproc_per_node=2 run_captioning.py \
+    --eval_model_dir CHECKPOINT_DIR \
+    --data_dir PATH_TO_NOCAPS_DIR \
+    --do_eval \
+    --do_lower_case \
+    --add_od_labels \
+    --learning_rate 0.00003 \
+    --per_gpu_train_batch_size 16 \
+    --per_gpu_eval_batch_size 16 \
+    --max_gen_length 20 \
+    --num_beams 5 \
+    --num_train_epochs 10 \
+    --save_steps 100 \
+    --output_dir output/nocaps/ \
+    --logging_steps 100 \
+    --repetition_penalty 1.0

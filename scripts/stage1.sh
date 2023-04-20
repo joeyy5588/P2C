@@ -1,0 +1,20 @@
+python -m torch.distributed.launch --nproc_per_node=8 stage1.py \
+    --model_name_or_path YOUR_PATH_FROM_VIVO \
+    --data_dir PATH_TO_NOCAPS_DIR \
+    --coco_dir PATH_TO_COCO_DIR \
+    --train_yaml data/oi.yaml \
+    --coco_yaml data/train.yaml \
+    --do_train \
+    --do_lower_case \
+    --add_od_labels \
+    --scheduler constant \
+    --learning_rate 1.5e-5 \
+    --per_gpu_train_batch_size 64 \
+    --num_train_epochs 20 \
+    --tie_weights \
+    --freeze_embedding \
+    --scst \
+    --use_oi \
+    --mlm_lambda 1.0 \
+    --max_steps 60000 \
+    --output_dir output/stage1
